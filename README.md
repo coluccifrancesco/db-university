@@ -37,21 +37,58 @@ Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi
 
 
 ### dipartimenti
-
+- id
+- id_corsi
+- nome del dipartimento
 
 ### corsi di laurea
-
+- id 
+- id_dipartimento
+- nome_corso
+- cfu_totali
+- limite_partecipanti
+- lingua
+- tipo_laurea
+- costo
+- anno_accademico
 
 ### esami
-
+- id
+- id_insegnante
+- id_corso_di_laurea
+- lingua
+- cfu_esame
+- semestre
+- anno_corso
+- tipologia_esame
+- modalità_valutazione
 
 ### insegnanti
-
+- id
+- id_esame
+- nome
+- cognome
+- telefono
+- indirizzo
+- email
 
 ### studenti
-
+- id
+- id_corso_di_laurea
+- nome
+- cognome
+- telefono
+- indirizzo
+- mail
 
 ### appelli
-
+- id
+- id_esame
+- id_insegnante
 
 ### voti
+- id
+- id_studente
+- id_insegnante
+- esito
+- votazione
